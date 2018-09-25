@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>View All</title>
+	</head>
+	<body>
+		<h1 th:if="${info != null}" th:text="${info}"></h1>
+		<div th:insert="view-car :: view-car"></div>
+	</body>
+</html>

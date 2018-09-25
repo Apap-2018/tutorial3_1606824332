@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>View All</title>
+	</head>
+	<body>
+		<div>
+			<div th:each="car : ${listCar}" th:fragment="viewall-car">
+				<h3 th:text="${car.id}">Tidak Ada Data</h3>
+				<h3 th:text="${car.brand}"></h3>
+				<h3 th:text="${car.type}"></h3>
+				<h3 th:text="${car.price}"></h3>
+				<h3 th:text="${car.amount}"></h3>
+			</div>
+		</div>
+	</body>
+</html>
